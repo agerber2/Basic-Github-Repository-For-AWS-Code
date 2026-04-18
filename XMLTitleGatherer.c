@@ -2,7 +2,7 @@
 #include <string.h>
 #include <libxml/parser.h>
 #include <libxml/tree.h>
-
+// testing automated jenkins job
 void printTitles(xmlNodePtr cur){
 	xmlNodePtr child;
 	if (xmlStrcmp(cur->name, (const xmlChar *) "catalog")) {
