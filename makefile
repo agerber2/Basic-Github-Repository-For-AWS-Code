@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -g
-LIBS = `xml2-config --cflags --libs`
+LIBS =
 
 TARGET = parser
 SRC = XMLTitleGatherer.c
@@ -8,7 +8,7 @@ SRC = XMLTitleGatherer.c
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC) $(LIBS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean:
 	rm -f $(TARGET)
