@@ -53,7 +53,8 @@ int main(int argc, char *argv[]) {
 	
 	xmlFreeDoc(doc);
 	xmlCleanupParser();
-
+	
+	printf("test\n");
 	return 0;
     }
 
